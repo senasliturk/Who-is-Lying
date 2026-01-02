@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Confetti from "react-confetti";
 
-const API_URL = "http://localhost:5000"; 
+const API_URL = "https://who-is-lying-api.onrender.com"; 
 
 export default function Game() {
   const { type } = useParams(); 
@@ -615,3 +615,4 @@ export default function Game() {
   );
 
 }
+
