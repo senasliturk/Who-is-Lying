@@ -22,7 +22,7 @@ export default function Register() {
     const data = await r.json().catch(() => ({}));
     if (!r.ok) return setMsg(data.message || "Register failed");
 
-    setMsg("Kayıt başarılı ✅ Login’e yönlendiriyorum...");
+    setMsg("Registration successful. I'm redirecting you to Login...");
     setTimeout(() => nav("/login"), 600);
   }
 
@@ -39,3 +39,4 @@ export default function Register() {
     </div>
   );
 }
+
