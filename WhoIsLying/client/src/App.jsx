@@ -15,7 +15,15 @@ export default function App() {
         <Route path="/" element={<Start />} />  
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/game" element={<Home />} />
+        
+        <Route 
+          path="/game" 
+          element={
+            <ProtectedRoute>
+              <Start />
+            </ProtectedRoute>
+          } 
+        />
 
         <Route
           path="/game/:type"
