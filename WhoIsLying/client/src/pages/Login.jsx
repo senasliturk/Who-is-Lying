@@ -25,7 +25,7 @@ export default function Login() {
     localStorage.setItem("user", JSON.stringify(data.user));
     window.dispatchEvent(new Event("auth-changed"));
     
-    window.location.href = "/";
+    window.location.href = "/game";
   }
 
   return (
@@ -76,4 +76,5 @@ export default function Login() {
   );
 
 }
+
 
